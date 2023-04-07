@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload CSV File</title>
+</head>
+<body>
+	<h1>Upload a CSV file</h1>
+	<form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+		<input type="file" name="file" accept=".csv"><br><br>
+		<input type="submit" value="Predict">
+	</form>
+</body>
+</html>
